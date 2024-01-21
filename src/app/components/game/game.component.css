@@ -1,0 +1,12 @@
+.game {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 500px) {
+
+  .game {
+    margin: 0 auto;
+  }
+}

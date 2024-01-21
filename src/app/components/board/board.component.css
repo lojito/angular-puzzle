@@ -1,0 +1,27 @@
+.board {
+  font-size: 0;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.board div {
+  width: 24%;
+  border: 1px solid black;
+  display: inline-block;
+  background-size: 100% 100%;
+  padding:0;
+}
+
+.board div:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.board .placed {
+  opacity: 0.3;
+}
+
+.board.over .placed {
+  opacity: 1;
+}

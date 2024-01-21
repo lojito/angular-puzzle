@@ -1,0 +1,21 @@
+.contact{
+  width: 95%;  
+  margin: 0 auto;
+}
+
+.contact .me, .contact .status {
+  color: green;
+  font-weight: normal;
+}
+
+.contact span {
+  font-weight: bold;
+  margin-right: 5px;  
+}
+
+@media screen and (max-width: 500px) {
+  .contact {
+    margin: 10px 25px 0;
+    width: 100%;
+  }
+} 

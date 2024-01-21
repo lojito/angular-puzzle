@@ -1,0 +1,12 @@
+<header>
+  <div class="flags">
+    <img
+      *ngFor="let language of languages"
+      [class.active]="defaultLanguage === language.id"
+      src="assets/images/flags/{{ language.flag }}.jpg?alt=media"
+      (click)="setLanguage(language.id)"
+      alt="{{ language.flag }}"
+      title="{{ language.hint }}"
+    />
+  </div>
+</header>

@@ -1,0 +1,7 @@
+<div class="app">
+  <app-header></app-header>
+  <app-navigation></app-navigation>
+  <div *ngIf="loading" class="info">{{ loadingMessage }}</div>
+  <div *ngIf="error" class="info">{{ errorMessage }}</div>
+</div>
+<router-outlet (activate)="onChildLoaded()"></router-outlet>

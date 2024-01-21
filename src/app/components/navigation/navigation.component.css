@@ -1,0 +1,116 @@
+nav {
+  width: 80%;
+  display:inline-block;
+}
+
+nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 8px;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+nav li a:hover {
+  color: #19A57E
+}
+
+nav li a.active {
+  font-weight: 1000;
+}
+
+input#menu {
+  display: none;
+}
+
+.menu-label {
+  display: none;
+  cursor: pointer;
+} 
+
+#burger-container {
+  position: relative;
+  width: 100%;
+}
+
+#burger {
+  display: block;
+}
+
+#burger span {
+  background: green;
+  display: block;
+  left: 80%;
+  width: 30px;
+  height: 3px;
+  margin-bottom: 6px;
+  position: relative;
+  top: 0;
+  transition: all ease-in-out 0.4s;
+}
+
+@media screen and (max-width: 500px) {
+
+  nav {
+    width: 60%;
+  }
+
+  nav ul {
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    text-align: left;
+  }
+
+  nav li {
+    display: block;
+  }
+
+  nav a {
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    background-color: #8fbc8f;
+  }
+
+  .menu-label {
+    display: inline-block;
+    width: 100%;
+    cursor: default;
+  }
+  
+  input#menu:checked ~ ul {
+    max-height: 160px;
+    transition: all ease 1s;
+  }
+  
+  input#menu:checked + label > #burger-container span:nth-child(2) {
+    width: 0;
+    opacity: 0;
+  }
+  
+  input#menu:checked + label > #burger-container span:nth-child(3) {
+    transform: rotate(45deg);
+    top: -9px;
+  }
+  
+  input#menu:checked + label > #burger-container span:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 9px;
+  }  
+  
+  input#menu ~ ul a.active {
+    position: absolute;
+    top: 5px;
+  }
+
+  input#menu:checked ~ ul a.active {
+    position: relative;
+    top: 0px;
+  }
+
+}  

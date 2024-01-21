@@ -1,0 +1,17 @@
+<div
+  class="board"
+  [class.over]="
+    boardService.numberOfPiecesInPlace === boardService.numberOfPieces
+  "
+>
+  <div
+    *ngFor="let piece of boardService.pieces"
+    [id]="piece.index"
+    [style.backgroundImage]="piece.path"
+    draggable="true"
+    (dragstart)="onDrag($event)"
+    (drop)="onDrop($event)"
+    (dragover)="onDragOver($event)"
+    [class.placed]="!piece.misplaced"
+  ></div>
+</div>

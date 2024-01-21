@@ -1,0 +1,28 @@
+.about {
+  margin-top: 10px;
+  width: 95%;
+}
+
+.about ul {
+  margin-top: 0;
+}
+
+.about li {
+  margin-top: 5px;
+}
+
+.about span {
+  font-weight: bold;
+  margin-right: 5px;  
+}
+
+@media screen and (max-width: 500px) {
+  .about {
+    margin: 10px 25px 0;
+    width: 100%;
+  }  
+  .github {
+    display: block;
+    padding-left: 40px;
+  }
+} 

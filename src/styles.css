@@ -1,0 +1,34 @@
+body {
+  background-color:darkseagreen;
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 540px;
+  margin: 10px auto 0;
+}
+
+.app{
+  margin: 0 auto
+}
+
+a {
+  color: green;
+  text-decoration: none;  
+}
+
+.categories {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.category {
+  margin-right: 5px;
+}
+
+.info {
+  text-align: center;
+  font-weight: bold;
+  margin: 10px 0;
+}

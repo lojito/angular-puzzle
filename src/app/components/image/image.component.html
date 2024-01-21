@@ -1,0 +1,14 @@
+<div class="image" *ngIf="imageText">
+  <span *ngIf="!historical" class="image-text">{{ imageText }}</span>
+
+  <img class="image-token desktop" [src]="path" alt="user" />
+  <img class="image-token mobile" [src]="pathMobile" alt="user" />
+
+  <img
+    *ngIf="!historical"
+    class="refresh"
+    src="assets/images/refresh.png?alt=media"
+    alt="refresh"
+    (click)="refreshImage()"
+  />
+</div>

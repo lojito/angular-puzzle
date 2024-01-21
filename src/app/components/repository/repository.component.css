@@ -1,0 +1,37 @@
+.repository {
+  margin-top: 20px;
+}
+
+.repository-images {
+  margin-top: 20px;
+}
+
+.repository-images div {
+  width: 23.75%;
+  display: inline-block;
+  margin-right: 1%;
+}
+
+.repository-images div:nth-child(4n+1) {
+  margin-left: 1%;
+}
+
+.repository-images div img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+
+  .repository {
+    margin-top: 0;
+  }
+
+  .repository-images div {
+    width: 48.50%;
+  }
+
+  .repository-images div:nth-child(2n+1) {
+    margin-left: 1%;
+  }
+
+}

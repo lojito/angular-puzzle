@@ -1,0 +1,9 @@
+.stats {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.time, .moves {
+   margin-right: 5px;
+}

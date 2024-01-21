@@ -1,0 +1,29 @@
+<div *ngIf="gameGoalMessage" id="game" class="game">
+  <div *ngIf="folder" class="info">{{ gameGoalMessage }}</div>
+
+  <app-category (newCategory)="newCategory($event)"></app-category>
+
+  <app-image
+    *ngIf="folder"
+    [folder]="folder"
+    (newImage)="newImage($event)"
+  ></app-image>
+
+  <app-stats
+    *ngIf="folder"
+    [time]="gameService.time"
+    [moves]="moves"
+    [misses]="misses"
+  ></app-stats>
+
+  <app-board
+    *ngIf="folder"
+    [folder]="folder"
+    [image]="image"
+    (newStats)="newStats($event)"
+  ></app-board>
+
+  <div *ngIf="gameService.over" class="info">
+    <span>{{ gameOverMessage }}</span>
+  </div>
+</div>

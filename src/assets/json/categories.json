@@ -1,0 +1,52 @@
+[
+  {
+    "folder": "habana",
+    "id": 0,
+    "name": "HAVANA_LANDMARKS"
+  },
+  {
+    "folder": "montreal",
+    "id": 1,
+    "name": "MONTREAL_LANDMARKS"
+  },
+  {
+    "folder": "vancouver",
+    "id": 2,
+    "name": "VANCOUVER_LANDMARKS"
+  },
+  {
+    "folder": "spain",
+    "id": 3,
+    "name": "SPAIN_LANDMARKS"
+  },
+  {
+    "folder": "germany",
+    "id": 4,
+    "name": "GERMANY_LANDMARKS"
+  },
+  {
+    "folder": "soccer",
+    "id": 5,
+    "name": "SOCCER_PLAYERS"
+  },
+  {
+    "folder": "fruits",
+    "id": 6,
+    "name": "FRUITS_AND_VEGETABLES"
+  },
+  {
+    "folder": "animals",
+    "id": 7,
+    "name": "ANIMALS"
+  },
+  {
+    "folder": "seinfeld",
+    "id": 8,
+    "name": "SEINFELD"
+  },
+  {
+    "folder": "puppies",
+    "id": 9,
+    "name": "PUPPIES"
+  }
+]
